@@ -11,7 +11,7 @@ const App = () => {
           alt=""
         />
         <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/80 via-transparent to-black" />
       </div>
 
       <header className="relative z-20 flex items-center justify-between px-4 py-2 sm:px-6 md:px-32 lg:px-40">
@@ -23,14 +23,14 @@ const App = () => {
 
         <div className="flex gap-3">
           <select
-            className="rounded border bg-black/40 px-2 py-1 font-semibold text-white"
+            className="rounded border bg-black/40 px-2 py-1 font-semibold text-white cursor-pointer"
             name="language"
             id="language"
           >
             <option value="English">ネA English</option>
             <option value="Hindi">Hindi</option>
           </select>
-          <button className="rounded bg-red-600 px-4 py-1 font-semibold text-white hover:bg-red-700">
+          <button className="rounded bg-red-600 px-4 py-1 font-semibold text-white hover:bg-red-700 cursor-pointer">
             Sign In
           </button>
         </div>

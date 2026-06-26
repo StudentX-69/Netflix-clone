@@ -45,7 +45,7 @@ const FaQ = () => {
            <div key={elem.question} className='flex justify-center flex-col  h-full w-[95%]  text-2xl font-sans bg-[#323131] hover:bg-[#525252e8] mb-1.5'>
              <div className='flex justify-between px-5 p-5 items-center'>
                <h2>{elem.question}</h2>
-               <button onClick={() => drop(index)} aria-expanded={isOpen} aria-controls={`dropdown-${index}`}>
+               <button className='cursor-pointer' onClick={() => drop(index)} aria-expanded={isOpen} aria-controls={`dropdown-${index}`}>
                  {isOpen ? <X size={42} strokeWidth={1} /> : <Plus size={42} strokeWidth={1} />}
                </button>
              </div>
@@ -66,7 +66,7 @@ const FaQ = () => {
       <p className='flex justify-center ml-18 mt-18 mb-3 text-lg'>Ready to watch? Enter your email to create or restart your membership.</p>
       <div className='flex gap-2'>
       <input className='w-1/2 border-gray-400 border px-3 py-3 ml-[20%]'  type="email" placeholder='Email address' />
-      <button className='bg-red-600 flex p-3 text-2xl font-medium'>Get Started <ChevronRight size={40} strokeWidth={1.5} /></button>
+      <button className='bg-red-600 hover:bg-red-700 flex p-3 text-2xl font-medium'>Get Started <ChevronRight size={40} strokeWidth={1.5} /></button>
       </div>
     </div>
   )
